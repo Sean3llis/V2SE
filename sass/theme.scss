@@ -1,0 +1,17 @@
+
+// Base
+@import 'variables';
+@import 'mixins';
+
+// Load partials here
+@import 'partials/hero';
+
+
+// Globals
+.contain {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: $contain-padding;
+}
+
+.row { margin: none; }
