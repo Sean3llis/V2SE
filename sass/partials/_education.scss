@@ -1,0 +1,55 @@
+#education {
+  text-align: center;
+	background-color: $color_light;
+  .content-wrapper {
+    padding: 80px 30px;
+    .row {
+      padding: 20px 0px;
+    }
+    .edu-icon {
+      text-align: right;
+      padding-right: 40px;
+      position: relative;
+      @media only screen and (max-width: $break-small){
+        text-align: center;
+        padding-right: 0px;
+      }
+      svg {
+        fill: $color_smokeDark;
+      }
+    }
+    .edu-body {
+      text-align: left;
+      color: $color_dark;
+      padding-left: 40px;
+      @media only screen and (max-width: $break-small){
+        text-align: center;
+        padding-left: 0px;
+      }
+      .detail {
+        @include small-detail;
+        color: $color_dark;
+        position: relative;
+        padding-top: 4px;
+        &:before {
+          content: '';
+          background-color: $color_smokeDark;
+          width: 220px;
+          height: 1px;
+          position: absolute;
+          top: -4px;
+          left: 0px;
+          margin: 0 auto;
+          @media only screen and (max-width: $break-small){
+            right: 0px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+#edu-dbc img {
+  margin-top: 20px;
+}

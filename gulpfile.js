@@ -15,21 +15,21 @@ var livereload = require('gulp-livereload');
 // var ignore = require('gulp-ignore');
 
 gulp.task('sass', function () {
-    gulp.src('sass/*.scss')
-        .pipe(plumber())
-        .pipe(sourcemaps.init())
-        .pipe(sass())
-        .pipe(sourcemaps.write())
-        .pipe(gulp.dest('css/'))
-        .pipe(livereload({start: true}));
+  gulp.src('sass/*.scss')
+      .pipe(plumber())
+      .pipe(sourcemaps.init())
+      .pipe(sass())
+      .pipe(sourcemaps.write())
+      .pipe(gulp.dest('css/'))
+      .pipe(livereload({start: true}));
 });
 
-gulp.task('watch', function () {
-    gulp.watch('**/*.scss', ['sass']);
+gulp.task('watch', ['sass'], function () {
+  gulp.watch('**/*.scss', ['sass']);
 });
 
 gulp.task('minify-css', function() {
-  return gulp.src('css/theme.css') // much faster 
+  return gulp.src('css/theme.css') // much faster
     .pipe(minifyCSS({ compatibility: 'ie8' }))
     .pipe(rename('theme.min.css'))
     .pipe(gulp.dest('css'));

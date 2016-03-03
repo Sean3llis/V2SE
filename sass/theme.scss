@@ -5,13 +5,53 @@
 
 // Load partials here
 @import 'partials/hero';
-
+@import 'partials/experience';
+@import 'partials/education';
+@import 'partials/portfolio';
+@import 'partials/footer';
 
 // Globals
-.contain {
-	max-width: 1200px;
+
+.content-wrapper {
+	max-width: $site-width;
 	margin: 0 auto;
-	padding: $contain-padding;
+	padding: 0px 20px;
 }
 
-.row { margin: none; }
+* {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: $color_dark;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+.row { margin: 0; }
+
+.heading-wrapper{
+	padding-bottom: 40px;
+	.subheading {
+		@include small-detail;
+		color: $color_dark;
+		text-transform: uppercase;
+		position: relative;
+		margin-top: 2px;
+		padding-top: 2px;
+		&:before {
+			content: '';
+			background-color: $color_smokeDark;
+			width: 220px;
+			height: 1px;
+			position: absolute;
+			top: -2px;
+			left: 0px;
+			right: 0px;
+			margin: 0 auto;
+		}
+	}
+	h2 {
+		@include serif-title;
+		margin: 0px;
+		display: inline-block;
+		color: $color_dark;
+	}
+}
