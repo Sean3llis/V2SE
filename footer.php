@@ -1,5 +1,5 @@
 <footer>
-	<div class="contain">
+	<div class="content-wrapper">
 		&copy; | <?php echo date('Y'); ?>
 	</div>
 </footer>

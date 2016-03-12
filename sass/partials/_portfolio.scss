@@ -5,9 +5,12 @@
     padding: 60px 30px;
     .portfolio-card {
       background-color: $color_light;
-      padding-bottom: 20px;
       img {
         max-width: 100%;
+      }
+      .portfolio-title {
+        margin: 0px;
+        padding: 20px 0px;
       }
     }
   }

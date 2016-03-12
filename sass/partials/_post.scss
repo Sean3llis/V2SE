@@ -1,0 +1,40 @@
+#post {
+  background-color: $color_smoke;
+  .content-wrapper {
+    text-align: center;
+    padding: 60px 0px;
+    @media only screen and (max-width: $break-small){
+      padding: 0px;
+    }
+    .post-card {
+      background-color: $color_light;
+      padding: 0px;
+      .heading-wrapper {
+        padding: 40px 0px;
+        border-bottom: 1px solid $color_smokeDark;
+      }
+      #slideshow:hover #controls {
+        opacity: 0.9;
+      }
+    }
+    #controls {
+      background-color: $color_dark;
+      height: 30px;
+      line-height: 30px;
+      position: absolute;
+      width: 100%;
+      bottom: 0px;
+      opacity: 0;
+      @include transition(all 0.2s ease-in-out);
+      .fa {
+        color: $color_light;
+      }
+      #play-pause {
+        width: ;
+        .fa-play {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

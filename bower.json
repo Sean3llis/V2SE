@@ -1,0 +1,16 @@
+{
+  "name": "V2SE",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Seane235/V2SE",
+  "authors": [
+    "seane235 <seane235@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
