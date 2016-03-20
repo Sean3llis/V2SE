@@ -1,5 +1,8 @@
 <div class="row" id="education">
   <div class="content-wrapper">
+    <div id="tower-icon">
+      <?php get_template_part('svg/icon', 'tower'); ?>
+    </div>
     <div class="heading-wrapper">
   		<h2>Education</h2>
   		<div class="subheading">& Certifications</div>

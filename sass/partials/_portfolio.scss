@@ -1,5 +1,6 @@
 #portfolio {
   background-color: $color_smoke;
+  text-align: center;
   .content-wrapper {
     text-align: center;
     padding: 60px 30px;
@@ -12,6 +13,20 @@
         margin: 0px;
         padding: 20px 0px;
       }
+    }
+  }
+}
+
+$svg_width: 400px;
+
+#camera-icon {
+  background-color: $color_smoke;
+  svg {
+    width: $svg_width;
+    height: $svg_width;
+    #black-camera {
+      opacity: 0;
+      visibility: hidden;
     }
   }
 }

@@ -31,6 +31,9 @@
 </div>
 
 <div class="row" id="photography">
+  <div id="camera-icon">
+    <?php get_template_part('svg/icon', 'camera'); ?>
+  </div>
   <div class="content-wrapper">
     <div class="heading-wrapper">
   		<h2>Photography</h2>
